@@ -10,10 +10,14 @@ let requireHeader = [
 let clientHeadersBlacklist = new Set([
     'host',
     'cookie',
+     'useragent',
+     'User-Agent',
 ]);
 let serverHeadersBlacklist = new Set([
     'set-cookie',
     'connection',
+    'useragent',
+     'User-Agent',
 ]);
 
 var sizeLimit = 2e6; //TODO: change this to something different depending on tier. It's fine for now.
